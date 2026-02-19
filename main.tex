@@ -17,7 +17,7 @@
 \usepackage{helvet}
 \usepackage{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[none]{hyphenat}
+\usepackage{microtype}
 \input{glyphtounicode}
 
 % Color scheme
@@ -48,6 +48,12 @@
 \setlength{\tabcolsep}{0in}
 \setlength{\footskip}{5pt}
 \setlength{\columnsep}{15pt}
+
+% Discourage but allow hyphenation when necessary
+\hyphenpenalty=5000
+\exhyphenpenalty=5000
+\tolerance=1000
+\emergencystretch=3em
 
 % Sections: bold uppercase with horizontal rule
 \titleformat{\section}{
